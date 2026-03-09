@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="AutoniqueAI — Custom AI development, generative AI systems, and intelligent automation solutions for startups and enterprises.">
+  <meta name="keywords"
+    content="AI development, machine learning, deep learning, generative AI, computer vision, NLP, AI automation, AI SaaS">
+  <meta name="author" content="AutoniqueAI">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AutoniqueAI — Engineering Intelligent AI Systems">
+  <meta property="og:description"
+    content="Custom AI development, generative AI systems, and intelligent automation solutions for startups and enterprises.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://autoniqueai.com">
+
+  <title>AutoniqueAI — AI Software Development & Intelligent Systems Engineering</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#home" class="nav-logo">Autonique<span>AI</span></a>
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero section" id="home">
+    <canvas class="pixel-canvas" id="pixelCanvas"></canvas>
+    <div class="hero-grid-bg"></div>
+    <div class="container">
+      <div class="hero-content fade-in">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          AI Engineering Studio
+        </div>
+        <h1 class="hero-title">
+          Engineering <span class="highlight">Intelligent</span> AI Systems for Real&#8209;World Problems
+        </h1>
+        <p class="hero-subtitle">
+          Custom AI development, generative AI systems, and intelligent automation solutions for startups and
+          enterprises.
+        </p>
+        <div class="hero-buttons">
+          <a href="https://calendly.com/autonique-ai" target="_blank" rel="noopener" class="btn btn-primary">
+            Book a Consultation
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </a>
+          <a href="#portfolio" class="btn btn-secondary">View Our Work</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text fade-in">
+          <span class="section-label">About Us</span>
+          <h2 class="section-title">We Build Production-Ready AI Systems</h2>
+          <p>
+            AutoniqueAI is an AI engineering studio focused on building production-ready AI systems and intelligent
+            software solutions. We partner with startups and enterprises to turn complex AI ideas into scalable,
+            real-world products.
+          </p>
+          <p>
+            Our team brings deep expertise across the full AI stack — from research and prototyping to deployment and
+            optimization — delivering systems that drive measurable business impact.
+          </p>
+        </div>
+        <div class="expertise-grid fade-in">
+          <!-- Machine Learning -->
+          <div class="expertise-item">
+            <div class="expertise-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3" />
+                <path d="M12 1v4" />
+                <path d="M12 19v4" />
+                <path d="m4.2 4.2 2.8 2.8" />
+                <path d="m17 17 2.8 2.8" />
+                <path d="M1 12h4" />
+                <path d="M19 12h4" />
+                <path d="m4.2 19.8 2.8-2.8" />
+                <path d="m17 7 2.8-2.8" />
+              </svg>
+            </div>
+            <span>Machine Learning</span>
+          </div>
+          <!-- Deep Learning -->
+          <div class="expertise-item">
+            <div class="expertise-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M12 2a4 4 0 0 0-4 4v4a4 4 0 0 0 8 0V6a4 4 0 0 0-4-4z" />
+                <path d="M16 10a4 4 0 0 1-8 0" />
+                <path d="M12 14v8" />
+                <path d="M8 22h8" />
+              </svg>
+            </div>
+            <span>Deep Learning</span>
+          </div>
+          <!-- Generative AI -->
+          <div class="expertise-item">
+            <div class="expertise-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M12 3v18" />
+                <path d="M5.5 6.5 12 3l6.5 3.5" />
+                <path d="M5.5 17.5 12 21l6.5-3.5" />
+                <path d="M3 12h18" />
+              </svg>
+            </div>
+            <span>Generative AI</span>
+          </div>
+          <!-- Computer Vision -->
+          <div class="expertise-item">
+            <div class="expertise-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+            </div>
+            <span>Computer Vision</span>
+          </div>
+          <!-- NLP -->
+          <div class="expertise-item">
+            <div class="expertise-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+              </svg>
+            </div>
+            <span>Natural Language Processing</span>
+          </div>
+          <!-- AI Automation -->
+          <div class="expertise-item">
+            <div class="expertise-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="2" y="6" width="20" height="12" rx="2" />
+                <path d="M12 12h.01" />
+                <path d="M17 12h.01" />
+                <path d="M7 12h.01" />
+              </svg>
+            </div>
+            <span>AI Automation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="text-center fade-in">
+        <span class="section-label">What We Do</span>
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-subtitle mx-auto">End-to-end AI engineering services — from research and prototyping to
+          production deployment.</p>
+      </div>
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card fade-in">
+          <div class="service-number">01</div>
+          <h3>Custom AI Model Development</h3>
+          <p>Build tailored machine learning and deep learning models designed to solve complex business problems with
+            high accuracy and production-grade reliability.</p>
+        </div>
+        <!-- Service 2 -->
+        <div class="service-card fade-in">
+          <div class="service-number">02</div>
+          <h3>Generative AI Systems</h3>
+          <p>Development of AI chatbots, RAG systems, AI copilots, and LLM-powered applications that transform how
+            businesses interact with data and customers.</p>
+        </div>
+        <!-- Service 3 -->
+        <div class="service-card fade-in">
+          <div class="service-number">03</div>
+          <h3>AI SaaS Development</h3>
+          <p>End-to-end development of AI-powered software products using modern, scalable architectures — from MVP to
+            market-ready platform.</p>
+        </div>
+        <!-- Service 4 -->
+        <div class="service-card fade-in">
+          <div class="service-number">04</div>
+          <h3>AI Research & Prototyping</h3>
+          <p>Rapid experimentation and proof-of-concept AI systems for startups and innovative companies exploring new
+            AI-driven possibilities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO SECTION ===== -->
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+      <div class="text-center fade-in">
+        <span class="section-label">Our Work</span>
+        <h2 class="section-title">Portfolio</h2>
+        <p class="section-subtitle mx-auto">Real AI systems we've built — from intelligent automation to
+          production-grade SaaS platforms.</p>
+      </div>
+      <div class="portfolio-grid">
+
+        <!-- Project 1: AutoniqueAI DM Automation -->
+        <div class="portfolio-card fade-in">
+          <div class="portfolio-card-header">
+            <div class="portfolio-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                <path d="M8 10h.01" />
+                <path d="M12 10h.01" />
+                <path d="M16 10h.01" />
+              </svg>
+            </div>
+          </div>
+          <div class="portfolio-card-body">
+            <span class="portfolio-tag">AI Automation</span>
+            <h3>AutoniqueAI</h3>
+            <p>AI-powered Instagram DM automation with real-time webhook integration, AI FAQ matching using embeddings
+              and LLM technology, and smart human handoff. Achieved 80% reduction in response time.</p>
+            <button class="btn btn-secondary btn-sm" data-modal="modal-1">View Case Study</button>
+          </div>
+        </div>
+
+        <!-- Project 2: Comic Translation System -->
+        <div class="portfolio-card fade-in">
+          <div class="portfolio-card-header">
+            <div class="portfolio-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="m5 8 6 6" />
+                <path d="m4 14 6-6 2-3" />
+                <path d="M2 5h12" />
+                <path d="M7 2h1" />
+                <path d="m22 22-5-10-5 10" />
+                <path d="M14 18h6" />
+              </svg>
+            </div>
+          </div>
+          <div class="portfolio-card-body">
+            <span class="portfolio-tag">Computer Vision & NLP</span>
+            <h3>Comic Translation System</h3>
+            <p>AI-powered global publishing solution with an end-to-end translation pipeline — input, detection,
+              translation, rendering, and output — enabling publication houses to go global efficiently.</p>
+            <button class="btn btn-secondary btn-sm" data-modal="modal-2">View Case Study</button>
+          </div>
+        </div>
+
+        <!-- Project 3: Market Research Intelligence -->
+        <div class="portfolio-card fade-in">
+          <div class="portfolio-card-header">
+            <div class="portfolio-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M3 3v18h18" />
+                <path d="m19 9-5 5-4-4-3 3" />
+              </svg>
+            </div>
+          </div>
+          <div class="portfolio-card-body">
+            <span class="portfolio-tag">Multi-Agent AI</span>
+            <h3>Market Research Intelligence</h3>
+            <p>AI-driven multi-agent research system generating comprehensive market reports in minutes. Features a
+              supervisor agent coordinating research agents with external API integration.</p>
+            <button class="btn btn-secondary btn-sm" data-modal="modal-3">View Case Study</button>
+          </div>
+        </div>
+
+        <!-- Project 4: Advanced Course Generator -->
+        <div class="portfolio-card fade-in">
+          <div class="portfolio-card-header">
+            <div class="portfolio-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
+                <path d="m9 10 2 2 4-4" />
+              </svg>
+            </div>
+          </div>
+          <div class="portfolio-card-body">
+            <span class="portfolio-tag">Generative AI</span>
+            <h3>Advanced Course Generator</h3>
+            <p>AI-powered curriculum automation platform that creates structured, professional-quality courses with
+              learning objectives, prerequisites, assessments, and analytics — all auto-generated.</p>
+            <button class="btn btn-secondary btn-sm" data-modal="modal-4">View Case Study</button>
+          </div>
+        </div>
+
+        <!-- Project 5: Face-Based Image Grouping -->
+        <div class="portfolio-card fade-in">
+          <div class="portfolio-card-header">
+            <div class="portfolio-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="9" cy="9" r="7" />
+                <path d="M15 15l6 6" />
+                <circle cx="9" cy="7" r="1.5" />
+                <path d="M6.5 12c0-1.5 1-3 2.5-3s2.5 1.5 2.5 3" />
+              </svg>
+            </div>
+          </div>
+          <div class="portfolio-card-body">
+            <span class="portfolio-tag">Computer Vision</span>
+            <h3>Face-Based Image Grouping & Retrieval</h3>
+            <p>AI-powered event photo management platform using facial recognition for bulk image ingestion, AI
+              clustering, and selfie-to-database matching. Built for events, conferences, and weddings.</p>
+            <button class="btn btn-secondary btn-sm" data-modal="modal-5">View Case Study</button>
+          </div>
+        </div>
+
+        <!-- Project 6: Real-Time Offline AI Translator -->
+        <div class="portfolio-card fade-in">
+          <div class="portfolio-card-header">
+            <div class="portfolio-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+                <line x1="12" x2="12" y1="19" y2="22" />
+              </svg>
+            </div>
+          </div>
+          <div class="portfolio-card-body">
+            <span class="portfolio-tag">On-Device AI</span>
+            <h3>Real-Time Offline AI Translator</h3>
+            <p>Privacy-focused multilingual communication engine with speech-to-text, instant translation, and
+              low-latency offline execution. Runs fully on-device with no cloud dependency.</p>
+            <button class="btn btn-secondary btn-sm" data-modal="modal-6">View Case Study</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS SECTION ===== -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="text-center fade-in">
+        <span class="section-label">How We Work</span>
+        <h2 class="section-title">Development Process</h2>
+        <p class="section-subtitle mx-auto">A proven four-step methodology to take your AI project from concept to
+          production.</p>
+      </div>
+      <div class="process-grid">
+        <div class="process-step fade-in">
+          <div class="process-number">01</div>
+          <h3>Discovery</h3>
+          <p>Understanding business goals, defining AI opportunities, and scoping the project.</p>
+        </div>
+        <div class="process-step fade-in">
+          <div class="process-number">02</div>
+          <h3>Solution Design</h3>
+          <p>Designing the architecture and selecting appropriate AI models and technologies.</p>
+        </div>
+        <div class="process-step fade-in">
+          <div class="process-number">03</div>
+          <h3>Development</h3>
+          <p>Building, training, and integrating AI systems with rigorous testing and iteration.</p>
+        </div>
+        <div class="process-step fade-in">
+          <div class="process-number">04</div>
+          <h3>Deployment</h3>
+          <p>Deploying scalable AI solutions ready for production with monitoring and support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE SECTION ===== -->
+  <section class="why-choose section" id="why-choose">
+    <div class="container">
+      <div class="text-center fade-in">
+        <span class="section-label">Why Us</span>
+        <h2 class="section-title">Why Choose AutoniqueAI</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-list fade-in">
+          <div class="why-item">
+            <div class="why-check">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </div>
+            <div class="why-item-text">
+              <h4>Production-Grade AI Systems</h4>
+              <p>We build AI that works in the real world — optimized, tested, and ready for scale from day one.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-check">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </div>
+            <div class="why-item-text">
+              <h4>Deep Technical Expertise</h4>
+              <p>Our team spans ML, deep learning, NLP, computer vision, and modern software engineering.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-check">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </div>
+            <div class="why-item-text">
+              <h4>Custom-Built Solutions</h4>
+              <p>No cookie-cutter templates. Every system is designed and engineered for your unique business
+                requirements.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-check">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </div>
+            <div class="why-item-text">
+              <h4>Focus on Real Business Impact</h4>
+              <p>We measure success by the tangible outcomes our AI systems deliver for your business.</p>
+            </div>
+          </div>
+        </div>
+        <div class="why-stats fade-in">
+          <div class="stat-card">
+            <div class="stat-number">6+</div>
+            <div class="stat-label">AI Products Built</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Projects Delivered</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Custom Solutions</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">AI Systems Running</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / CTA SECTION ===== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-inner fade-in">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Start Your AI Project</h2>
+        <p class="section-subtitle">Ready to build something intelligent? Let's discuss your idea and explore how AI can
+          transform your business.</p>
+
+        <div class="contact-methods">
+          <a href="mailto:autonique.ai@gmail.com" class="contact-method">
+            <div class="contact-method-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect width="20" height="16" x="2" y="4" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+            </div>
+            <div class="contact-method-text">
+              <small>Email Us</small>
+              <span>autonique.ai@gmail.com</span>
+            </div>
+          </a>
+          <a href="https://wa.me/" target="_blank" rel="noopener" class="contact-method">
+            <div class="contact-method-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+            </div>
+            <div class="contact-method-text">
+              <small>WhatsApp</small>
+              <span>Chat with us</span>
+            </div>
+          </a>
+        </div>
+
+        <a href="https://calendly.com/autonique-ai" target="_blank" rel="noopener" class="btn btn-primary">
+          Schedule a Call
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect width="18" height="18" x="3" y="4" rx="2" />
+            <path d="M16 2v4" />
+            <path d="M8 2v4" />
+            <path d="M3 10h18" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CASE STUDY MODALS ===== -->
+
+  <!-- Modal 1: AutoniqueAI DM Automation -->
+  <div class="modal-overlay" id="modal-1">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <span class="modal-tag">AI Automation</span>
+      <h2 class="modal-title">AutoniqueAI</h2>
+      <p class="modal-subtitle">AI-Powered Instagram DM Automation</p>
+      <div class="modal-divider"></div>
+      <div class="modal-section">
+        <h3>Overview</h3>
+        <p>A 24/7 automated Instagram DM response system that captures every customer inquiry, turns conversations into
+          sales, and maintains a consistent brand voice across all chats.</p>
+      </div>
+      <div class="modal-section">
+        <h3>How It Works</h3>
+        <div class="modal-steps">
+          <div class="modal-step"><span>01</span> Real-Time Webhook Integration — Instant Instagram DM capture</div>
+          <div class="modal-step"><span>02</span> AI FAQ Matching — Embeddings + LLM technology</div>
+          <div class="modal-step"><span>03</span> Smart Human Handoff — Seamless escalation when needed</div>
+          <div class="modal-step"><span>04</span> Multi-Account & Analytics — Dashboard for all metrics</div>
+        </div>
+      </div>
+      <div class="modal-section">
+        <h3>Key Results</h3>
+        <div class="modal-metrics">
+          <div class="modal-metric"><strong>80%</strong><span>Reduction in response time</span></div>
+          <div class="modal-metric"><strong>24/7</strong><span>Automated responses</span></div>
+          <div class="modal-metric"><strong>100%</strong><span>Lead capture rate</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Comic Translation System -->
+  <div class="modal-overlay" id="modal-2">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <span class="modal-tag">Computer Vision & NLP</span>
+      <h2 class="modal-title">Comic Translation System</h2>
+      <p class="modal-subtitle">AI-Powered Global Publishing Solution</p>
+      <div class="modal-divider"></div>
+      <div class="modal-section">
+        <h3>Mission</h3>
+        <p>Helping publication houses go global by enabling faster, more efficient comic translation through AI-powered
+          processing — supporting multi-language output with context-aware quality.</p>
+      </div>
+      <div class="modal-section">
+        <h3>Translation Pipeline</h3>
+        <div class="modal-steps">
+          <div class="modal-step"><span>01</span> Input — Original comic ingestion</div>
+          <div class="modal-step"><span>02</span> Detection — Text region identification</div>
+          <div class="modal-step"><span>03</span> Translation — Context-aware AI translation</div>
+          <div class="modal-step"><span>04</span> Rendering — Text placement and styling</div>
+          <div class="modal-step"><span>05</span> Output — Publish-ready translated comic</div>
+        </div>
+      </div>
+      <div class="modal-section">
+        <h3>Capabilities</h3>
+        <div class="modal-metrics">
+          <div class="modal-metric"><strong>Global</strong><span>Multi-language support</span></div>
+          <div class="modal-metric"><strong>Fast</strong><span>AI-accelerated workflow</span></div>
+          <div class="modal-metric"><strong>Accurate</strong><span>Context-aware translation</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Market Research Intelligence -->
+  <div class="modal-overlay" id="modal-3">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <span class="modal-tag">Multi-Agent AI</span>
+      <h2 class="modal-title">Market Research Intelligence</h2>
+      <p class="modal-subtitle">AI-Powered Multi-Agent Research System</p>
+      <div class="modal-divider"></div>
+      <div class="modal-section">
+        <h3>Overview</h3>
+        <p>An AI-driven multi-agent system that generates comprehensive market research reports in minutes. A central
+          Supervisor Agent orchestrates the entire research process, coordinating multiple research agents and
+          integrating external APIs.</p>
+      </div>
+      <div class="modal-section">
+        <h3>Research Capabilities</h3>
+        <div class="modal-steps">
+          <div class="modal-step"><span>01</span> Market Trends — Industry analysis and forecasting</div>
+          <div class="modal-step"><span>02</span> Competitive Landscape — Rival analysis and positioning</div>
+          <div class="modal-step"><span>03</span> Consumer Insights — Behavior patterns and preferences</div>
+          <div class="modal-step"><span>04</span> Market Size Estimation — Growth projections and TAM</div>
+        </div>
+      </div>
+      <div class="modal-section">
+        <h3>Key Benefits</h3>
+        <div class="modal-metrics">
+          <div class="modal-metric"><strong>Minutes</strong><span>Not days for reports</span></div>
+          <div class="modal-metric"><strong>Multi-Agent</strong><span>Orchestrated research</span></div>
+          <div class="modal-metric"><strong>Actionable</strong><span>Decision-ready insights</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: Advanced Course Generator -->
+  <div class="modal-overlay" id="modal-4">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <span class="modal-tag">Generative AI</span>
+      <h2 class="modal-title">Advanced Course Generator</h2>
+      <p class="modal-subtitle">AI Curriculum Automation Platform</p>
+      <div class="modal-divider"></div>
+      <div class="modal-section">
+        <h3>Overview</h3>
+        <p>An AI-powered platform that automatically creates structured, professional-quality courses based on topic,
+          audience, and difficulty level. Combines AI generation with web-enhanced research for comprehensive programs.
+        </p>
+      </div>
+      <div class="modal-section">
+        <h3>AI-Generated Components</h3>
+        <div class="modal-steps">
+          <div class="modal-step"><span>01</span> Complete course structure and module organization</div>
+          <div class="modal-step"><span>02</span> Learning objectives and prerequisites</div>
+          <div class="modal-step"><span>03</span> Assessments and evaluation criteria</div>
+          <div class="modal-step"><span>04</span> Course analytics and content distribution</div>
+        </div>
+      </div>
+      <div class="modal-section">
+        <h3>Features</h3>
+        <div class="modal-metrics">
+          <div class="modal-metric"><strong>Auto</strong><span>AI-generated content</span></div>
+          <div class="modal-metric"><strong>Structured</strong><span>Module-based learning</span></div>
+          <div class="modal-metric"><strong>Deploy-Ready</strong><span>Complete programs</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5: Face-Based Image Grouping -->
+  <div class="modal-overlay" id="modal-5">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <span class="modal-tag">Computer Vision</span>
+      <h2 class="modal-title">Face-Based Image Grouping & Retrieval</h2>
+      <p class="modal-subtitle">AI-Powered Event Photo Management Platform</p>
+      <div class="modal-divider"></div>
+      <div class="modal-section">
+        <h3>Overview</h3>
+        <p>A platform that automatically groups and indexes thousands of event images based on facial similarity using
+          AI-powered face recognition models. Eliminates manual photo sorting inefficiency.</p>
+      </div>
+      <div class="modal-section">
+        <h3>How It Works</h3>
+        <div class="modal-steps">
+          <div class="modal-step"><span>01</span> Event organizers upload bulk images</div>
+          <div class="modal-step"><span>02</span> AI processes and groups by faces</div>
+          <div class="modal-step"><span>03</span> Attendees upload a selfie</div>
+          <div class="modal-step"><span>04</span> Instantly retrieve all matching photos</div>
+        </div>
+      </div>
+      <div class="modal-section">
+        <h3>Target Use Cases</h3>
+        <div class="modal-metrics">
+          <div class="modal-metric"><strong>Events</strong><span>Large-scale gatherings</span></div>
+          <div class="modal-metric"><strong>Conferences</strong><span>Corporate events</span></div>
+          <div class="modal-metric"><strong>Weddings</strong><span>Personal celebrations</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6: Real-Time Offline AI Translator -->
+  <div class="modal-overlay" id="modal-6">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <span class="modal-tag">On-Device AI</span>
+      <h2 class="modal-title">Real-Time Offline AI Translator</h2>
+      <p class="modal-subtitle">AI-Powered Multilingual Communication Engine</p>
+      <div class="modal-divider"></div>
+      <div class="modal-section">
+        <h3>Overview</h3>
+        <p>Real-time speech and text translation without internet dependency. Ensures secure and low-latency
+          multilingual communication using optimized on-device AI models with no cloud dependency or data leakage.</p>
+      </div>
+      <div class="modal-section">
+        <h3>How It Works</h3>
+        <div class="modal-steps">
+          <div class="modal-step"><span>01</span> User speaks or inputs text</div>
+          <div class="modal-step"><span>02</span> System converts speech to text</div>
+          <div class="modal-step"><span>03</span> AI translates into target language</div>
+          <div class="modal-step"><span>04</span> Output displayed instantly</div>
+        </div>
+      </div>
+      <div class="modal-section">
+        <h3>Target Use Cases</h3>
+        <div class="modal-metrics">
+          <div class="modal-metric"><strong>Enterprise</strong><span>Internal communication</span></div>
+          <div class="modal-metric"><strong>Defense</strong><span>Secure operations</span></div>
+          <div class="modal-metric"><strong>Remote</strong><span>Low-connectivity regions</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">Autonique<span>AI</span></a>
+          <p>AI Software Development & Intelligent Systems Engineering. We build production-ready AI systems that solve
+            real-world problems.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#process">Process</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:autonique.ai@gmail.com">autonique.ai@gmail.com</a></li>
+            <li><a href="https://wa.me/" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="#contact">Book a Call</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 AutoniqueAI. All rights reserved.</p>
+        <p>Engineered with precision.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
